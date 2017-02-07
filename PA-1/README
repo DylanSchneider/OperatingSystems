@@ -1,0 +1,3 @@
+Set up and configure GRUB.
+Compile and install a generic linux kernel.
+Add and test a custome system call the kernel.
