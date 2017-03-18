@@ -5,7 +5,7 @@
 //  Created by Dylan Schneider on 3/12/17.
 //  Copyright © 2017 Dylan Schneider. All rights reserved.
 //
-#include "multi-lookup.h"
+#include "multi-threadedDNS.h"
 
 int FILES_FINISHED;
 int NUM_INPUT_FILES;
