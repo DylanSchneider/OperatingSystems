@@ -6,8 +6,8 @@
 //  Copyright © 2017 Dylan Schneider. All rights reserved.
 //
 
-#ifndef multi_lookup_h
-#define multi_lookup_h
+#ifndef multi-threadedDNS_h
+#define multi-threadedDNS_h
 
 #include <pthread.h>
 #include <stdlib.h>
@@ -32,4 +32,4 @@ void* Read(char* fileName);
 void* resolverPool();
 void* Resolve();
 
-#endif /* multi_lookup_h */
+#endif /* multi-threadedDNS_h */
