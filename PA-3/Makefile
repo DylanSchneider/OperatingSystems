@@ -4,12 +4,12 @@ LFLAGS = -Wall -Wextra -pthread
 
 .PHONY: all clean
 
-all: multi-lookup
+all: multi-threadedDNS
 
-multi-lookup: multi-lookup.o queue.o util.o
+multi-threadedDNS: multi-threadedDNS.o queue.o util.o
 	$(CC) $(LFLAGS) $^ -o $@
 
-multi-lookup.o: multi-lookup.c
+multi-threadedDNS.o: multi-threadedDNS.c
 	$(CC) $(CFLAGS) $<
 
 queue.o: queue.c queue.h
@@ -19,7 +19,7 @@ util.o: util.c util.h
 	$(CC) $(CFLAGS) $<
 
 clean:
-	rm -f multi-lookup
+	rm -f multi-threadedDNS
 	rm -f *.o
 	rm -f *~
-	rm -f results.txt
+	rm -f out.txt
