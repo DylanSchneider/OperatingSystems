@@ -7,8 +7,12 @@ Dylan Schneider
 
 
 
----Folders---
-input - names*.txt input files
+---Files---
+multi-lookup.c - multi-threaded driver file for resolution.
+util.c - DNS resolution function.
+queue.c - Simple FIFO queue data structure.
+namesX.txt - Input files with domain names seperated by a newline.
+
 
 ---Executables---
 multi-lookup - Multi-Threaded DNS Resolution Engine
