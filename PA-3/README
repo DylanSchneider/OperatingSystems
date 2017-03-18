@@ -1,0 +1,33 @@
+CS3753 (Operating Systems)
+Spring 2017
+University of Colorado Boulder
+Programming Assignment 3
+
+Dylan Schneider
+
+
+
+---Folders---
+input - names*.txt input files
+
+---Executables---
+multi-lookup - Multi-Threaded DNS Resolution Engine
+This program creates a reader thread for each input file, and a resolver thread for each logical cpu on your system. It reads the input files, which contain domain names (separated by \n), and writes the domain and all available IPv4 addresses associated with each domain name. This engine only works for IPv4, if the domain has an IPv6 it will be written at “IPv6-UNHANDLED”.
+
+---Examples---
+Build:
+ make
+
+Clean:
+ make clean
+
+Run:
+./multi-lookup names1.txt names2.txt names3.txt names4.txt names5.txt out.txt
+
+Check Memory:
+valgrind ./multi-lookup names1.txt names2.txt names3.txt names4.txt names5.txt out.txt
+
+
+
+
+
