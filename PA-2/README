@@ -1,0 +1,14 @@
+Simple Character Driver ran as a kernel module on the generic Linux kernel. This folder contains the driver itself, and a test file to test the driver.
+
+
+How to run:
+#install character device file
+sudo mknod -m 777 /dev/simple_character_driver c 240 0
+
+#make and install the kernel module
+make -C /lib/modules/$(uname -r)/build M=$PWD modules
+sudo insmod simple_char_driver.ko
+
+#compile and run the test file
+gcc test.c -o test
+./test
