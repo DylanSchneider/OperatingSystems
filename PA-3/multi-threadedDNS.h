@@ -6,8 +6,8 @@
 //  Copyright © 2017 Dylan Schneider. All rights reserved.
 //
 
-#ifndef multi-threadedDNS_h
-#define multi-threadedDNS_h
+#ifndef multi_threadedDNS_h
+#define multi_threadedDNS_h
 
 #include <pthread.h>
 #include <stdlib.h>
@@ -32,4 +32,4 @@ void* Read(char* fileName);
 void* resolverPool();
 void* Resolve();
 
-#endif /* multi-threadedDNS_h */
+#endif /* multi_threadedDNS_h */
