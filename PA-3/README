@@ -26,10 +26,10 @@ Clean:
  make clean
 
 Run:
-./multi-lookup names1.txt names2.txt names3.txt names4.txt names5.txt out.txt
+./multi-threadedDNS names1.txt names2.txt names3.txt names4.txt names5.txt out.txt
 
 Check Memory:
-valgrind ./multi-lookup names1.txt names2.txt names3.txt names4.txt names5.txt out.txt
+valgrind ./multi-threadedDNS names1.txt names2.txt names3.txt names4.txt names5.txt out.txt
 
 
 
