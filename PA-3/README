@@ -8,14 +8,14 @@ Dylan Schneider
 
 
 ---Files---
-multi-lookup.c - multi-threaded driver file for resolution.
+multi-threadedDNS.c - multi-threaded driver file for resolution.
 util.c - DNS resolution function.
 queue.c - Simple FIFO queue data structure.
 namesX.txt - Input files with domain names seperated by a newline.
 
 
 ---Executables---
-multi-lookup - Multi-Threaded DNS Resolution Engine
+multi-threadedDNS - Multi-Threaded DNS Resolution Engine
 This program creates a reader thread for each input file, and a resolver thread for each logical cpu on your system. It reads the input files, which contain domain names (separated by \n), and writes the domain and all available IPv4 addresses associated with each domain name. This engine only works for IPv4, if the domain has an IPv6 it will be written at “IPv6-UNHANDLED”.
 
 ---Examples---
